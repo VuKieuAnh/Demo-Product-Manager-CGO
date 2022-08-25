@@ -8,7 +8,9 @@
 </head>
 <body>
     <h1>Create new product</h1>
-    <input id="newProduct">
+    <input id="name" placeholder="name">
+    <input id="price" placeholder="price">
+    <input id="number" placeholder="number">
     <button onclick="createNewProduct()">Create</button>
 
     <h1>List Product<span id="number"></span></h1> 
@@ -18,12 +20,21 @@
     <table border="1px">
         <tr>
             <td>Name</td>
+            <td>Price</td>
+            <td>Number</td>
+            <td>Amount</td>
+            <td>Image</td>
             <td>Edit</td>
             <td>Delete</td>
         </tr>
         <tbody id="listProduct">
             <tr>
                 <td>Iphone 13</td>
+                <td>Gia</td>
+                <td>So luong</td>
+                <td>Thanh tien</td>
+
+                <td><img src="img/download.jpeg" width="100"></td>
                 <td><button>Edit</button></td>
                 <td><button>Delete</button></td>
             </tr>
@@ -36,6 +47,8 @@
         </tbody>    
 
     </table>
+
     <script src="product.js"></script>
+    <script src="productManager.js"></script>
 </body>
 </html>
